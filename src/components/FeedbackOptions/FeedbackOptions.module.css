@@ -1,0 +1,22 @@
+.feedbackSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+.feedbackButton {
+  color: rgb(209, 101, 0);
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid rgb(255, 161, 72);
+  background: transparent;
+  width: 30%;
+  display: block;
+  transition: color 1s, background 1s;
+  outline: rgb(209, 101, 0);
+}
+.feedbackButton:hover {
+  background: rgb(209, 101, 0);
+  color: rgb(255, 161, 72);
+}

@@ -1,0 +1,22 @@
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 300px;
+  font-size: 20px;
+}
+.item:nth-child(2n) {
+  background: rgba(255, 255, 255, 0.5);
+}
+.label {
+  color: rgb(209, 101, 0);
+  padding: 10px;
+  width: 70%;
+  text-align: left;
+}
+.value {
+  color: rgb(209, 101, 0);
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+}

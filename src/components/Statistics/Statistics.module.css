@@ -1,0 +1,11 @@
+.statistics {
+  list-style: none;
+  text-align: center;
+  font-size: 24px;
+  /* background: rgb(240, 192, 130); */
+}
+.title {
+  color: rgb(209, 101, 0);
+  padding: 10px;
+  padding-bottom: 20px;
+}
