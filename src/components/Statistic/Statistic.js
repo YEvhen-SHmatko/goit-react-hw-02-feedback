@@ -6,7 +6,11 @@ export default function Statistic({ label, value }) {
   return (
     <li className={Styles.item}>
       <span className={Styles.label}>{label}</span>
-      <div className={Styles.value}>{value} &#37;</div>
+      {label !== 'Positive feedback' ? (
+        <div className={Styles.value}>{value}</div>
+      ) : (
+        <div className={Styles.value}>{value} &#37;</div>
+      )}
     </li>
   );
 }
