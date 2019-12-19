@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Styles from './FeedbackOptions.module.css';
 
-export default function FeedbackOptions({ options, onLeaveFeedback }) {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   const { good, neutral, bad } = options;
   return (
     <div className={Styles.feedbackSection}>
@@ -35,7 +35,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
       </button>
     </div>
   );
-}
+};
 
 FeedbackOptions.propTypes = {
   options: PropTypes.shape({
@@ -45,3 +45,4 @@ FeedbackOptions.propTypes = {
   }).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
+export default FeedbackOptions;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import shortid from 'shortid';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 import Statistics from '../Statistics/Statistics';
 import Section from '../Section/Section';
@@ -29,30 +28,21 @@ export default class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-    // const { goodId, neutralId, badId } = this.handleIds;
     const total = this.countTotalFeedback();
     const percentage = Number(
       this.countPositiveFeedbackPercentage().toFixed(0),
     );
     return (
       <>
-        <Section
-          // className={SectionStyles}
-          title="Please leave feedback"
-        >
+        <Section title="Please leave feedback">
           <FeedbackOptions
-            // className={FeedbackOptionsStyles}
             options={this.state}
             onLeaveFeedback={this.handleBtnClick}
           />
           {this.countTotalFeedback() < 1 ? (
-            <Notification
-              // className={NotificationStyles}
-              message="No feedback given"
-            />
+            <Notification message="No feedback given" />
           ) : (
             <Statistics
-              // className={StatisticsStyles}
               good={good}
               neutral={neutral}
               bad={bad}
